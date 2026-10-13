@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zeyrio</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#121214"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='44' fill='%23121214'/><rect x='14' y='14' width='164' height='164' rx='34' fill='%23a58bff'/><path d='M52 56H140V76L80 128H142V148H50V128L110 76H52Z' fill='%2315101f'/></svg>"><link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFY0lEQVR4nO3cO24cRxQF0CbhFQyo3BsU4FRwbCg1oA06FzFboAObwoiaT3fXq0/XOycmZ1rivfWqaz5Py6BOp5e33tdAnPP59an3NVwzxEUJe04jlKLbBQg9l3qVoemTCj1rtCxDkycSfPZoUYSqTyD4RKhZhCoPLPjUUKMIz9EPKPzUUiNboQUQfmqLzljISBF8eojYEhVPAOGnl4jsFRVA+OmtNIO7CyD8jKIki7sKIPyMZm8mN99E9Az/ty/fez01G3z++qnbc2+9Md70w63DL/BzaF2ILSVY/YOtwi/0c2tVhrUlWPVDtcMv9DnVLsOaEoS/FWIr4c9rhL/9w4bUWv1H+MczjlrT4NEUuDsBhJ9WamXiUYZvtqNG+AWfNWpMg1uToNk9gPCzVsusXC1A9Oov/GwVnZlbma4+AYSfvVpk55cCRK7+wk+pyAxdy3a1CSD8RKmZpZ8KELX6Cz/RojL1MePdXwmGnsILYPWnlhrZ+lGAiO2P8FNbRMYus24LRGphBbD600pk1p6XpXz7I/y0Vpq598zbApGaApBacQFsf+glInsmAKk9+5IrsjqdXt6KJoDtD72VZtAWiNQUgNQUgNR2F8D+n1GUZNEEIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFILXfel9AtD/++r33JUzv7z//6X0JYUwAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUpvuQ/EzfWD7lp4f/J/t/9cEOBjhj6UAByL88abbAs1I8OsxAQYn/HUpwMCEvz4FGJTwt6EAAxL+dhRgMMLfllOgQQh+HybAAIS/HwXoTPj7UoCOhL8/BehE+MegAB0I/zgUoDHhH4tj0EYEf0wmQAPCPy4FqEz4x6YAFQn/+BSgEuE/BgWoQPiPwylQIME/HhMgiPAfkwIEEP7jUoBCwn9sClBA+I9PAXYS/jkowA7CPw/HoBsI/nxMgJWEf04KsILwz0sBHhD+uSnAHcI/PwW4QfhzcAr0geDnYgJcEP58FOB/wp+TAizCn1n6Agh/bqkLIPykLYDwsywJj0EFn0upJoDw81GaAgg/16QogPBzy/QFEH7umboAws8jU54CCT5rTTcBhJ8tpiqA8LPVNFugnuEf4fl7mKH0U00A2EoBSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSO3pdHp52/vL3758j7wW2OXz10+7f9cEIDUFIDUFILWiApTsvSBCaQafz+fXp6BrgUM5n1+fbIFIrbgAtkH0EpE9E4DUFIDUnpflv5uBkgexDaK10sy9Zz5sAigBrURmzRaI1H4UIOL1AFOA2iIydpn18AmgBNRSI1u2QKT2UwGi3hZhChAtKlMfM15tAigBUWpm6ZcCRL45TgkoFZmha9mufg+gBOzVIjtXCxD9FmklYKvozNzKdLNTICVgrZZZubvSl3xjxD2+TYJragX/3o7m7gSo9Wkx04CPeoR/WR5MgHe1JsGymAbZ1VwM1yzg3V8JNg3yGuFvv3qLU3MKXDIR5tYq9Gu375v2+K1K8E4Z5tB6pd9y77r5Jrd1CS4pxDH03NpsPbjZdcrTswRwy55Ty103wb5Mi9HszeTuUyAlYBQlWSw6BlUCeivNYPHrAEpALxHZCw2vm2NaiFx0Q18JNg2oLTpj4W+FUAJqqZGtqmG1JSJCzUW1yWqtCOzRYjfRdLuiCKzRchvdbb+uDFzqde84xA2rMuQ0woFJ9wu4RSnmMkLYr/kXP7r0r9w6/tEAAAAASUVORK5CYII="><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFY0lEQVR4nO3cO24cRxQF0CbhFQyo3BsU4FRwbCg1oA06FzFboAObwoiaT3fXq0/XOycmZ1rivfWqaz5Py6BOp5e33tdAnPP59an3NVwzxEUJe04jlKLbBQg9l3qVoemTCj1rtCxDkycSfPZoUYSqTyD4RKhZhCoPLPjUUKMIz9EPKPzUUiNboQUQfmqLzljISBF8eojYEhVPAOGnl4jsFRVA+OmtNIO7CyD8jKIki7sKIPyMZm8mN99E9Az/ty/fez01G3z++qnbc2+9Md70w63DL/BzaF2ILSVY/YOtwi/0c2tVhrUlWPVDtcMv9DnVLsOaEoS/FWIr4c9rhL/9w4bUWv1H+MczjlrT4NEUuDsBhJ9WamXiUYZvtqNG+AWfNWpMg1uToNk9gPCzVsusXC1A9Oov/GwVnZlbma4+AYSfvVpk55cCRK7+wk+pyAxdy3a1CSD8RKmZpZ8KELX6Cz/RojL1MePdXwmGnsILYPWnlhrZ+lGAiO2P8FNbRMYus24LRGphBbD600pk1p6XpXz7I/y0Vpq598zbApGaApBacQFsf+glInsmAKk9+5IrsjqdXt6KJoDtD72VZtAWiNQUgNQUgNR2F8D+n1GUZNEEIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFIDUFILXfel9AtD/++r33JUzv7z//6X0JYUwAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUlMAUpvuQ/EzfWD7lp4f/J/t/9cEOBjhj6UAByL88abbAs1I8OsxAQYn/HUpwMCEvz4FGJTwt6EAAxL+dhRgMMLfllOgQQh+HybAAIS/HwXoTPj7UoCOhL8/BehE+MegAB0I/zgUoDHhH4tj0EYEf0wmQAPCPy4FqEz4x6YAFQn/+BSgEuE/BgWoQPiPwylQIME/HhMgiPAfkwIEEP7jUoBCwn9sClBA+I9PAXYS/jkowA7CPw/HoBsI/nxMgJWEf04KsILwz0sBHhD+uSnAHcI/PwW4QfhzcAr0geDnYgJcEP58FOB/wp+TAizCn1n6Agh/bqkLIPykLYDwsywJj0EFn0upJoDw81GaAgg/16QogPBzy/QFEH7umboAws8jU54CCT5rTTcBhJ8tpiqA8LPVNFugnuEf4fl7mKH0U00A2EoBSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSE0BSO3pdHp52/vL3758j7wW2OXz10+7f9cEIDUFIDUFILWiApTsvSBCaQafz+fXp6BrgUM5n1+fbIFIrbgAtkH0EpE9E4DUFIDUnpflv5uBkgexDaK10sy9Zz5sAigBrURmzRaI1H4UIOL1AFOA2iIydpn18AmgBNRSI1u2QKT2UwGi3hZhChAtKlMfM15tAigBUWpm6ZcCRL45TgkoFZmha9mufg+gBOzVIjtXCxD9FmklYKvozNzKdLNTICVgrZZZubvSl3xjxD2+TYJragX/3o7m7gSo9Wkx04CPeoR/WR5MgHe1JsGymAbZ1VwM1yzg3V8JNg3yGuFvv3qLU3MKXDIR5tYq9Gu375v2+K1K8E4Z5tB6pd9y77r5Jrd1CS4pxDH03NpsPbjZdcrTswRwy55Ty103wb5Mi9HszeTuUyAlYBQlWSw6BlUCeivNYPHrAEpALxHZCw2vm2NaiFx0Q18JNg2oLTpj4W+FUAJqqZGtqmG1JSJCzUW1yWqtCOzRYjfRdLuiCKzRchvdbb+uDFzqde84xA2rMuQ0woFJ9wu4RSnmMkLYr/kXP7r0r9w6/tEAAAAASUVORK5CYII="><meta name="apple-mobile-web-app-title" content="Zeyrio">
+<style>
+:root{--bg:#121214;--card:#1c1c21;--card2:#25252c;--tx:#f3f3f6;--mu:#8e8e9a;--ac:#a58bff;--ok:#4ade80;--wa:#fbbf24;--er:#f87171;--ln:#2e2e36;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f3f8;--card:#fff;--card2:#ebe9f2;--tx:#1a1a22;--mu:#6b6b78;--ac:#6d4fe0;--ln:#dcdae6}}
+:root[data-theme="light"]{--bg:#f4f3f8;--card:#fff;--card2:#ebe9f2;--tx:#1a1a22;--mu:#6b6b78;--ac:#6d4fe0;--ln:#dcdae6}
+:root[data-theme="dark"]{--bg:#121214}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--bg);color:var(--tx);font:15px/1.4 "Segoe UI",Roboto,system-ui,sans-serif}
+main{padding:16px 16px 150px;max-width:640px;margin:auto}
+h1{font-size:24px;font-weight:700}h2{font-size:17px;margin:18px 0 8px}
+.mu{color:var(--mu);font-size:13px}.card{background:var(--card);border-radius:16px;padding:14px;margin-bottom:10px}
+.row{display:flex;align-items:center;gap:10px}.sp{flex:1}
+button{font:inherit;color:inherit;border:0;border-radius:12px;background:var(--card2);padding:9px 14px;min-height:40px;cursor:pointer}
+button.p{background:var(--ac);color:#15101f;font-weight:600}button.d{color:var(--er)}button.s{padding:5px 10px;min-height:32px;font-size:13px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ac)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;background:none;border-radius:0;padding:12px 2px;font-size:12px;color:var(--mu)}nav button.on{color:var(--ac);font-weight:700}
+.fab{position:fixed;right:18px;bottom:calc(76px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:28px;font-size:28px;padding:0}
+.bar{height:8px;background:var(--card2);border-radius:4px;overflow:hidden;margin:10px 0 6px}.bar i{display:block;height:100%;background:var(--ac)}
+.t{border-left:4px solid var(--ln)}.t.done{border-color:var(--ok);opacity:.65}.t.active{border-color:var(--ac)}.t.up{border-color:var(--wa)}.t.over{border-color:var(--er)}.t.skip{opacity:.45}
+.tm{width:92px;font-variant-numeric:tabular-nums;font-size:13px;color:var(--mu)}
+.chip{font-size:11px;padding:2px 8px;border-radius:9px;background:var(--card2);color:var(--mu)}.chip.ur{color:var(--er)}.chip.hi{color:var(--wa)}
+.tabs{display:flex;gap:6px;margin:10px 0;flex-wrap:wrap}.tabs button.on{background:var(--ac);color:#15101f}
+input,select,textarea{font:inherit;color:inherit;background:var(--card2);border:1px solid var(--ln);border-radius:10px;padding:9px;width:100%}
+label{display:block;font-size:13px;color:var(--mu);margin:10px 0 4px}
+.sheet{position:fixed;inset:0;background:#000a;display:flex;align-items:flex-end;z-index:9}
+.sheet>div{background:var(--card);width:100%;max-width:640px;margin:auto;border-radius:20px 20px 0 0;padding:18px;max-height:92%;overflow:auto}
+.grid{overflow-x:auto}.grid table{border-collapse:collapse;font-size:11px}.grid td,.grid th{padding:3px;text-align:center;min-width:30px}
+.grid td:first-child,.grid th:first-child{position:sticky;left:0;background:var(--bg);text-align:left;min-width:90px;font-size:13px}
+.c{width:26px;height:26px;border-radius:6px;background:var(--card2);display:inline-block;cursor:pointer}.c.on{background:var(--ok)}.c.off{opacity:.25;cursor:default}
+.wk{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.wk>div{background:var(--card);border-radius:10px;padding:6px 3px;min-height:110px;font-size:10px;cursor:pointer;overflow:hidden}
+.wk b{display:block;text-align:center;font-size:12px;margin-bottom:4px}.wk .e{border-radius:5px;padding:2px 3px;margin-bottom:2px;background:var(--card2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.mo{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.mo>div{background:var(--card);border-radius:10px;min-height:48px;padding:4px;text-align:center;font-size:12px;cursor:pointer}
+.mo .sel,.wk .sel{outline:2px solid var(--ac)}.dot{display:inline-block;width:6px;height:6px;border-radius:3px;background:var(--ac);margin:1px}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(140px + env(safe-area-inset-bottom,0px));background:var(--ac);color:#15101f;padding:12px;border-radius:12px;display:none;z-index:10;font-weight:600}
+</style></head><body><main id="app"></main>
+<div id="toast"></div><div id="sheet"></div><div id="dlg"></div>
+<nav id="nav"></nav><button class="p fab" id="fab" aria-label="Add task">+</button>
+<script>
+const $=s=>document.querySelector(s);
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const P=s=>{const[a,b,c]=s.split('-').map(Number);return new Date(a,b-1,c)};
+const add=(s,n)=>{const d=P(s);d.setDate(d.getDate()+n);return iso(d)};
+const today=()=>iso(new Date());
+const mins=t=>t?(+t.slice(0,2))*60+(+t.slice(3,5)):null;
+const nowM=()=>{const d=new Date();return d.getHours()*60+d.getMinutes()};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const uid=()=>Math.random().toString(36).slice(2,9);
+const DEF={tasks:[],done:{},habits:[],hlog:{},timers:{},sessions:[],cats:['Study','Work','Health','Exercise','Personal','Household','Leisure','Other'],set:{h24:true,ws:1,dur:30,rem:10,theme:'auto'},v:1};
+let S;try{S=Object.assign({},DEF,JSON.parse(localStorage.getItem('obito')||'{}'))}catch(e){S=structuredClone(DEF)}
+S.over=S.over||{};
+const save=()=>{try{localStorage.setItem('obito',JSON.stringify(S))}catch(e){toast('Could not save: storage is full or blocked')}};
+let tab='today',sub='day',sel=today(),hm=today().slice(0,7),filt='all',q='';
+function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(()=>t.style.display='none',2600)}
+const fmt=t=>{if(!t)return'';if(S.set.h24)return t;let h=+t.slice(0,2);const a=h<12?'AM':'PM';h=h%12||12;return h+t.slice(2)+' '+a};
+const dlen=m=>m>=60?Math.floor(m/60)+'h'+(m%60?' '+m%60+'m':''):m+'m';
+const fms=ms=>{const s=Math.floor(ms/1000);return[Math.floor(s/3600),Math.floor(s/60)%60,s%60].map(x=>String(x).padStart(2,'0')).join(':')};
+function occurs(t,d){if(d<t.date)return false;if(t.until&&d>t.until)return false;const w=P(d).getDay();
+ switch(t.rep){case'daily':return true;case'weekdays':return w>0&&w<6;case'weekly':return w===P(t.date).getDay();case'monthly':return P(d).getDate()===P(t.date).getDate();default:return d===t.date}}
+const dayTasks=d=>S.tasks.filter(t=>occurs(t,d)).map(t=>{const o=(S.over||{})[t.id+'|'+d];return o?(o.del?null:{...t,...o}):t}).filter(Boolean).sort((a,b)=>(a.start||'99').localeCompare(b.start||'99'));
+const key=(t,d)=>t.id+'|'+d;
+function status(t,d){const k=S.done[key(t,d)];if(k)return k;const n=today();if(d<n)return'over';if(d>n||!t.start)return'up';
+ const m=nowM(),s=mins(t.start),e=t.end?mins(t.end):s;return m>=e&&t.end?'over':m>=s?'active':'up'}
+const SL={done:'Done',skip:'Skipped',over:'Overdue',active:'In progress',up:'Upcoming'};
+function tracked(id,d){return S.sessions.filter(x=>x.id===id&&x.d===d).reduce((a,x)=>a+x.ms,0)+(S.timers[id]&&S.timers[id].d===d?Date.now()-S.timers[id].st:0)}
+function card(t,d){const st=status(t,d),cls={done:'done',skip:'skip',over:'over',active:'active',up:'up'}[st],run=S.timers[t.id];
+ const pl=t.start&&t.end?mins(t.end)-mins(t.start):0,tr=tracked(t.id,d);
+ return`<div class="card t ${cls}"><div class="row"><div class="tm">${t.start?fmt(t.start)+(t.end?'–'+fmt(t.end):''):'Anytime'}</div><div class="sp"><b>${esc(t.title)}</b><div class="mu">${esc(t.cat)}${pl?' · '+dlen(pl):''}${t.rep!=='none'?' · repeats':''}${t.rem>=0?' · 🔔':''}</div></div>
+ <span class="chip ${t.pri==='Urgent'?'ur':t.pri==='High'?'hi':''}">${t.pri}</span></div>
+ <div class="row mu" style="margin:6px 0">${SL[st]}${tr?` · tracked <span data-tm="${t.id}|${d}">${fms(tr)}</span>`:''}</div>
+ <div class="row" style="flex-wrap:wrap;gap:6px">${st==='done'?`<button class="s" onclick="mark('${t.id}','${d}',null)">Undo</button>`:`<button class="s p" onclick="mark('${t.id}','${d}','done')">Complete</button><button class="s" onclick="mark('${t.id}','${d}','skip')">Skip</button>`}
+ <button class="s" onclick="timer('${t.id}','${d}')">${run&&run.d===d?'Stop timer':'Start timer'}</button>
+ <button class="s" onclick="form('${t.id}','${d}')">Edit</button><button class="s d" onclick="del('${t.id}','${d}')">Delete</button></div></div>`}
+function mark(id,d,v){const t=S.tasks.find(x=>x.id===id),k=key(t,d);if(v)S.done[k]=v;else delete S.done[k];
+ if(v==='done'&&S.timers[id])timer(id,d,true);save();render();toast(v==='done'?'Task completed':v==='skip'?'Task skipped':'Completion undone')}
+function timer(id,d,quiet){const r=S.timers[id];if(r){S.sessions.push({id,d:r.d,ms:Date.now()-r.st});delete S.timers[id];if(!quiet)toast('Timer stopped')}
+ else{
+ for(const k in S.timers){S.sessions.push({id:k,d:S.timers[k].d,ms:Date.now()-S.timers[k].st});delete S.timers[k]}S.timers[id]={st:Date.now(),d};toast('Timer started')}save();render()}
+function del(id,d){const t=S.tasks.find(x=>x.id===id);if(!t)return;
+ const all=()=>ask('Delete "'+t.title+'"'+(t.rep!=='none'?' and all its repeats?':'?'),()=>{S.tasks=S.tasks.filter(x=>x.id!==id);for(const k in S.done)if(k.startsWith(id+'|'))delete S.done[k];for(const k in (S.over||{}))if(k.startsWith(id+'|'))delete S.over[k];delete S.timers[id];save();render();toast('Task deleted')});
+ if(t.rep==='none')return all();
+ scope('Delete which repeats of "'+t.title+'"?',x=>{S.over=S.over||{};
+  if(x==='all')return all();
+  if(x==='one'){S.over[id+'|'+d]={del:true};save();render();return toast('Occurrence deleted')}
+  if(d<=t.date)return all();t.until=add(d,-1);save();render();toast('This and future deleted')},true)}
+function snooze(id,d,m){S.snz=S.snz||{};S.snz[id+'|'+d]=Date.now()+m*60000;save();toast('Snoozed for '+m+' min')}
+function form(id,d,sc){let t=S.tasks.find(x=>x.id===id);if(t&&t.rep!=='none'&&!sc)return scope('Edit which repeats of "'+t.title+'"?',x=>form(id,d,x));if(t&&sc==='one')t={...t,...((S.over||{})[id+'|'+d]||{})};if(t&&sc==='future')t={...t,date:d};t=t||{title:'',date:sel,start:'',end:'',cat:S.cats[0],pri:'Normal',rep:'none',rem:S.set.rem,notes:'',until:''};
+ const o=(a,v)=>a.map(x=>`<option ${x==v?'selected':''}>${x}</option>`).join('');
+ $('#sheet').innerHTML=`<div class="sheet" onclick="if(event.target===this)closeS()"><div><h2 style="margin-top:0">${id?'Edit task':'New task'}</h2>
+ <label>Title</label><input id="f_t" value="${esc(t.title)}" placeholder="What needs doing?">
+ <div class="row"><div class="sp"><label>Date</label><input type="date" id="f_d" value="${sc==='one'?d:t.date}" ${sc==='one'?'disabled':''}></div><div class="sp"><label>Category</label><select id="f_c">${o(S.cats,t.cat)}</select></div></div>
+ <div class="row"><div class="sp"><label>Start</label><input type="time" id="f_s" value="${t.start}"></div><div class="sp"><label>End</label><input type="time" id="f_e" value="${t.end}"></div></div>
+ <div class="row"><div class="sp"><label>Priority</label><select id="f_p">${o(['Low','Normal','High','Urgent'],t.pri)}</select></div>
+ <div class="sp"><label>Repeat</label><select id="f_r" ${sc==='one'?'disabled':''}>${['none','daily','weekdays','weekly','monthly'].map(x=>`<option value="${x}" ${x==t.rep?'selected':''}>${x==='none'?'Does not repeat':x[0].toUpperCase()+x.slice(1)}</option>`).join('')}</select></div></div>
+ <div class="row"><div class="sp"><label>Reminder</label><select id="f_m">${[[-1,'None'],[0,'At start'],[5,'5 min before'],[10,'10 min before'],[15,'15 min before'],[30,'30 min before'],[60,'1 hour before']].map(([v,l])=>`<option value="${v}" ${v==t.rem?'selected':''}>${l}</option>`).join('')}</select></div>
+ <div class="sp"><label>Repeat until</label><input type="date" id="f_u" value="${t.until||''}" ${sc==='one'?'disabled':''}></div></div>
+ <label>Notes</label><textarea id="f_n" rows="2">${esc(t.notes)}</textarea><div id="f_w" class="mu" style="color:var(--wa);margin-top:8px"></div>
+ <div class="row" style="margin-top:14px"><button onclick="closeS()">Cancel</button><div class="sp"></div><button class="p" onclick="saveT('${id||''}','${d||''}','${sc||''}')">Save task</button></div></div></div>`}
+function ask(m,cb,ok){$('#dlg').innerHTML=`<div class="sheet" style="z-index:11;align-items:center;padding:20px"><div style="border-radius:20px;max-width:360px"><p>${esc(m)}</p><div class="row" style="margin-top:16px"><button id="dn">Cancel</button><div class="sp"></div><button class="p" id="dy">${ok||'Delete'}</button></div></div></div>`;
+ $('#dn').onclick=()=>$('#dlg').innerHTML='';$('#dy').onclick=()=>{$('#dlg').innerHTML='';cb()}}
+function scope(title,cb,dl){$('#dlg').innerHTML=`<div class="sheet" style="z-index:11;align-items:center;padding:20px"><div style="border-radius:20px;max-width:360px"><p><b>${esc(title)}</b></p><div style="display:grid;gap:8px;margin-top:12px"><button class="${dl?'d':''}" data-s="one">Only this occurrence</button><button class="${dl?'d':''}" data-s="future">This and future</button><button class="${dl?'d':''}" data-s="all">Entire series</button><button data-s="x">Cancel</button></div></div></div>`;
+ document.querySelectorAll('#dlg [data-s]').forEach(b=>b.onclick=()=>{$('#dlg').innerHTML='';if(b.dataset.s!=='x')cb(b.dataset.s)})}
+function closeS(){$('#sheet').innerHTML=''}
+function saveT(id,d0,sc){const g=x=>$('#f_'+x).value,title=g('t').trim();if(!title)return toast('Add a title first');
+ const s=g('s'),e=g('e');if(e&&!s)return toast('Set a start time or clear the end time');if(s&&e&&e<=s)return toast('End time must be after start time');
+ if(!g('d'))return toast('Pick a date');
+ const t={id:id||uid(),title,date:g('d'),start:s,end:e,cat:g('c'),pri:g('p'),rep:g('r'),rem:+g('m'),until:g('u'),notes:g('n')};
+ const clash=s&&dayTasks(t.date).filter(x=>x.id!==t.id&&x.start&&mins(x.start)<mins(e||s)+(e?0:1)&&mins(x.end||x.start)>mins(s)).map(x=>x.title);
+ if(clash&&clash.length&&!$('#f_w').dataset.ok){$('#f_w').textContent='Overlaps with: '+clash.join(', ')+'. Tap Save task again to keep it anyway.';$('#f_w').dataset.ok=1;return}
+ S.over=S.over||{};const old=S.tasks.find(x=>x.id===id);
+ if(id&&sc==='one'){S.over[id+'|'+d0]={title:t.title,start:t.start,end:t.end,cat:t.cat,pri:t.pri,notes:t.notes,rem:t.rem}}
+ else if(id&&sc==='future'&&d0>old.date){old.until=add(d0,-1);t.id=uid();S.tasks.push(t);for(const m of [S.done,S.over])for(const k of Object.keys(m))if(k.startsWith(id+'|')&&k.slice(id.length+1)>=d0){m[t.id+k.slice(id.length)]=m[k];delete m[k]}}
+ else if(id)S.tasks=S.tasks.map(x=>x.id===id?t:x);else S.tasks.push(t);save();closeS();render();toast('Task saved');
+ if(t.rem>=0&&'Notification'in window&&Notification.permission==='default')Notification.requestPermission()}
+function fStart(m){const len=m==='focus'?(S.set.fm||25):(S.set.bm||5);S.focus={mode:m,end:Date.now()+len*60000,len};save();render()}
+function fStop(){const f=S.focus;if(f&&f.mode==='focus'){const el=Math.round((Date.now()-(f.end-f.len*60000))/60000);if(el>=1)(S.fh=S.fh||[]).push({d:today(),min:el})}S.focus=null;save();render()}
+function focusCard(){const f=S.focus;return`<div class="card">${f?`<div class="row"><b style="font-size:26px;font-variant-numeric:tabular-nums" id="fcl">${fms(Math.max(0,f.end-Date.now()))}</b><span class="mu">${f.mode==='focus'?'Focus session':'Break'}</span><div class="sp"></div><button class="s" onclick="fStop()">Stop</button></div>`:`<div class="row"><b class="sp">Focus timer</b><button class="s p" onclick="fStart('focus')">Focus ${S.set.fm||25}m</button><button class="s" onclick="fStart('break')">Break ${S.set.bm||5}m</button></div>`}</div>`}
+function stats(a,b){let tot=0,dn=0,sk=0,ov=0,pl=0,tr=0;for(let d=a;d<=b;d=add(d,1))for(const t of dayTasks(d)){const st=status(t,d);tot++;if(st==='done')dn++;else if(st==='skip')sk++;else if(st==='over')ov++;
+ if(t.start&&t.end)pl+=mins(t.end)-mins(t.start);tr+=tracked(t.id,d)}return{tot,dn,sk,ov,pl,tr,pct:tot-sk?Math.round(dn/(tot-sk)*100):0}}
+function render(){
+ document.documentElement.dataset.theme=S.set.theme==='auto'?'':S.set.theme;
+ $('#nav').innerHTML=[['today','Today'],['sched','Schedule'],['habits','Habits'],['prog','Progress'],['set','Settings']].map(([k,l])=>`<button class="${tab===k?'on':''}" onclick="tab='${k}';render()">${l}</button>`).join('');
+ $('#fab').style.display=tab==='habits'||tab==='set'||tab==='prog'?'none':'block';$('#fab').onclick=()=>form();
+ const g0=document.querySelector('.grid'),gl=g0?g0.scrollLeft:0,y=window.scrollY,k=tab+'|'+sub+'|'+hm+'|'+sel,same=render.k===k;render.k=k;
+ $('#app').innerHTML={today:vToday,sched:vSched,habits:vHabits,prog:vProg,set:vSet}[tab]();const g=document.querySelector('.grid');
+ if(same){window.scrollTo(0,y);if(g)g.scrollLeft=gl}else{window.scrollTo(0,0);if(g&&hm===today().slice(0,7))g.scrollLeft=Math.max(0,(+today().slice(8)-4)*36)}}
+function vToday(){const d=today(),L=dayTasks(d),st=stats(d,d),nx=L.find(t=>['up','active'].includes(status(t,d))&&t.start),h=new Date().getHours();
+ const date=new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});
+ return`<h1>${h<12?'Good morning':h<18?'Good afternoon':'Good evening'}</h1><div class="mu">${date}</div>
+ <div class="card" style="margin-top:14px"><div class="row"><b style="font-size:28px">${st.pct}%</b><span class="mu">${st.dn} done · ${st.tot-st.dn-st.sk} left</span></div><div class="bar"><i style="width:${st.pct}%"></i></div>
+ <div class="mu">${nx?'Next: '+esc(nx.title)+' at '+fmt(nx.start):L.length?'Nothing else timed today':'Nothing planned yet'}</div></div>
+ ${focusCard()}<h2>Today's timeline</h2>${L.length?L.map(t=>card(t,d)).join(''):`<div class="card" style="text-align:center;padding:32px 14px"><b>A clear day ahead</b><div class="mu" style="margin:6px 0 14px">Add your first task and give it a time.</div><button class="p" onclick="form()">Add a task</button></div>`}
+ ${dueHabits(d)}`}
+function dueHabits(d){const H=S.habits.filter(h=>h.days.includes(P(d).getDay()));if(!H.length)return'';
+ return`<h2>Habits today</h2><div class="card">${H.map(h=>`<div class="row" style="padding:5px 0"><span class="c ${S.hlog[h.id+'|'+d]?'on':''}" onclick="hTog('${h.id}','${d}')"></span><span>${esc(h.name)}</span></div>`).join('')}</div>`}
+function vSched(){const nav=(n)=>{sel=sub==='month'?add(sel.slice(0,7)+'-01',n*31).slice(0,7)+'-'+sel.slice(8):add(sel,n*(sub==='week'?7:1));render()};window._n=nav;
+ const head=`<div class="row"><h1 class="sp">Schedule</h1><button class="s" onclick="_n(-1)" aria-label="Previous">‹</button><button class="s" onclick="sel=today();render()">Today</button><button class="s" onclick="_n(1)" aria-label="Next">›</button></div>
+ <div class="row" style="margin-top:8px"><div class="tabs sp">${['day','week','month'].map(x=>`<button class="${sub===x?'on':''}" onclick="sub='${x}';render()">${x[0].toUpperCase()+x.slice(1)}</button>`).join('')}</div><input type="date" value="${sel}" style="width:140px" onchange="sel=this.value||sel;render()"></div>`;
+ if(sub==='day'){const L=dayTasks(sel);return head+`<div class="mu">${P(sel).toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'})}</div><div style="margin-top:10px">${L.length?L.map(t=>card(t,sel)).join(''):'<div class="card mu">No tasks on this day.</div>'}</div>`}
+ if(sub==='week'){const w=(P(sel).getDay()-S.set.ws+7)%7,a=add(sel,-w);let c='';for(let i=0;i<7;i++){const d=add(a,i),L=dayTasks(d);
+  c+=`<div class="${d===sel?'sel':''}" onclick="sel='${d}';sub='day';render()"><b ${d===today()?'style="color:var(--ac)"':''}>${P(d).toLocaleDateString(undefined,{weekday:'short'})} ${+d.slice(8)}</b>${L.map(t=>`<div class="e" style="${S.done[key(t,d)]==='done'?'text-decoration:line-through;opacity:.6':''}">${t.start?t.start.slice(0,5)+' ':''}${esc(t.title)}</div>`).join('')}</div>`}
+  return head+`<div class="wk" style="margin-top:10px">${c}</div><div class="mu" style="margin-top:8px">Tap a day to open it.</div>`}
+ const f=P(sel.slice(0,7)+'-01'),off=(f.getDay()-S.set.ws+7)%7,n=new Date(f.getFullYear(),f.getMonth()+1,0).getDate();
+ let c=Array.from({length:7},(_,i)=>`<div class="mu" style="background:none;min-height:0;cursor:default">${['S','M','T','W','T','F','S'][(i+S.set.ws)%7]}</div>`).join('')+'<div style="visibility:hidden"></div>'.repeat(off);
+ for(let i=1;i<=n;i++){const d=sel.slice(0,7)+'-'+String(i).padStart(2,'0'),L=dayTasks(d),H=S.habits.some(h=>S.hlog[h.id+'|'+d]);
+  c+=`<div class="${d===sel?'sel':''}" onclick="sel='${d}';sub='day';render()">${i}<br>${L.length?'<span class="dot"></span>':''}${H?'<span class="dot" style="background:var(--ok)"></span>':''}</div>`}
+ return head+`<div class="mu" style="margin-top:6px">${f.toLocaleDateString(undefined,{month:'long',year:'numeric'})}</div><div class="mo" style="margin-top:8px">${c}</div><div class="mu" style="margin-top:8px"><span class="dot"></span> tasks  <span class="dot" style="background:var(--ok)"></span> habits done</div>`}
+function hSched(h,d){return h.days.includes(P(d).getDay())&&d>=h.created}
+function hStats(h){const t=today();let cur=0,best=0,run=0,tot=0;
+ for(let d=h.created;d<=t;d=add(d,1)){if(!hSched(h,d))continue;if(S.hlog[h.id+'|'+d]){run++;tot++;best=Math.max(best,run)}else if(d!==t)run=0}
+ let d=t;if(!S.hlog[h.id+'|'+d])d=add(d,-1);
+ for(;d>=h.created;d=add(d,-1)){if(!hSched(h,d))continue;if(S.hlog[h.id+'|'+d])cur++;else break}
+ const rate=(a,b)=>{let s=0,k=0;for(let x=a;x<=b&&x<=t;x=add(x,1))if(hSched(h,x)){s++;if(S.hlog[h.id+'|'+x])k++}return s?Math.round(k/s*100):0};
+ return{cur,best,tot,wk:rate(add(t,-6),t),mo:rate(t.slice(0,7)+'-01',t)}}
+function hTog(id,d){if(d>today())return toast("Can't tick a future day yet");const h=S.habits.find(x=>x.id===id),k=id+'|'+d;if(S.hlog[k])delete S.hlog[k];else{S.hlog[k]=1;if(h&&d<h.created)h.created=d}save();render()}
+function vHabits(){const f=P(hm+'-01'),n=new Date(f.getFullYear(),f.getMonth()+1,0).getDate(),D=['S','M','T','W','T','F','S'];
+ const ds=Array.from({length:n},(_,i)=>hm+'-'+String(i+1).padStart(2,'0'));
+ const mv=k=>{const x=new Date(f.getFullYear(),f.getMonth()+k,1);hm=iso(x).slice(0,7);render()};window._m=mv;
+ return`<div class="row"><h1 class="sp">Habits</h1><button class="s" onclick="_m(-1)" aria-label="Previous month">‹</button><button class="s" onclick="hm=today().slice(0,7);render()">Today</button><button class="s" onclick="_m(1)" aria-label="Next month">›</button></div>
+ <div class="mu">${f.toLocaleDateString(undefined,{month:'long',year:'numeric'})}</div>
+ ${S.habits.length?`<div class="grid card" style="margin-top:10px"><table><tr><th></th>${ds.map(d=>`<th ${d===today()?'style="color:var(--ac)"':''}>${+d.slice(8)}<br>${D[P(d).getDay()]}</th>`).join('')}</tr>
+ ${S.habits.map(h=>`<tr><td>${esc(h.name)}</td>${ds.map(d=>h.days.includes(P(d).getDay())?`<td><span class="c ${S.hlog[h.id+'|'+d]?'on':''}" onclick="hTog('${h.id}','${d}')"></span></td>`:`<td><span class="c off"></span></td>`).join('')}</tr>`).join('')}</table></div>
+ ${S.habits.map(h=>{const s=hStats(h);return`<div class="card"><div class="row"><b class="sp">${esc(h.name)}</b><button class="s" onclick="hForm('${h.id}')">Edit</button></div>
+ <div class="mu">Streak ${s.cur} · Best ${s.best} · Total ${s.tot} · Week ${s.wk}% · Month ${s.mo}%</div></div>`}).join('')}
+ <div class="mu">Streaks skip days a habit isn't scheduled.</div>`:`<div class="card" style="text-align:center;padding:32px 14px;margin-top:10px"><b>No habits yet</b><div class="mu" style="margin:6px 0 14px">Track anything you want to repeat.</div></div>`}
+ <button class="p" style="margin-top:10px" onclick="hForm()">Add a habit</button>`}
+function hForm(id){const h=S.habits.find(x=>x.id===id)||{name:'',days:[0,1,2,3,4,5,6]};
+ $('#sheet').innerHTML=`<div class="sheet" onclick="if(event.target===this)closeS()"><div><h2 style="margin-top:0">${id?'Edit habit':'New habit'}</h2><label>Name</label><input id="h_n" value="${esc(h.name)}" placeholder="Read for 30 minutes">
+ <label>Days</label><div class="tabs">${['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map((n,i)=>`<button class="${h.days.includes(i)?'on':''}" data-d="${i}" onclick="this.classList.toggle('on')">${n}</button>`).join('')}</div>
+ <div class="row" style="margin-top:14px"><button onclick="closeS()">Cancel</button>${id?`<button class="d" onclick="hDel('${id}')">Delete</button>`:''}<div class="sp"></div><button class="p" onclick="hSave('${id||''}')">Save habit</button></div></div></div>`}
+function hSave(id){const n=$('#h_n').value.trim(),days=[...document.querySelectorAll('[data-d].on')].map(b=>+b.dataset.d);if(!n)return toast('Name your habit');if(!days.length)return toast('Pick at least one day');
+ if(id)S.habits=S.habits.map(h=>h.id===id?{...h,name:n,days}:h);else S.habits.push({id:uid(),name:n,days,created:today()});save();closeS();render()}
+function hDel(id){ask('Delete this habit and its history?',()=>{S.habits=S.habits.filter(h=>h.id!==id);for(const k in S.hlog)if(k.startsWith(id+'|'))delete S.hlog[k];save();closeS();render();toast('Habit deleted')})}
+function vProg(){const t=today(),w=add(t,-((P(t).getDay()-S.set.ws+7)%7)),m=t.slice(0,7)+'-01';
+ const R=[['Today',t,t],['This week',w,add(w,6)],['This month',m,add(m,30).slice(0,7)===m.slice(0,7)?add(m,30):add(add(m,32).slice(0,7)+'-01',-1)]];
+ return`<h1>Progress</h1>${R.map(([l,a,b])=>{const s=stats(a,b);return`<div class="card"><div class="row"><b class="sp">${l}</b><b style="font-size:22px">${s.tot?s.pct+'%':'–'}</b></div><div class="bar"><i style="width:${s.pct}%"></i></div>
+ <div class="mu">${s.dn} done · ${s.sk} skipped · ${s.ov} overdue of ${s.tot} planned</div><div class="mu">Planned ${dlen(s.pl)} · Tracked ${s.tr?dlen(Math.round(s.tr/60000)):'0m'}</div></div>`}).join('')}
+ <h2>Focus</h2>${(()=>{const f=S.fh||[],td=f.filter(x=>x.d===t),sum=a=>a.reduce((n,x)=>n+x.min,0);return f.length?`<div class="card"><b>${sum(td)} min today</b> <span class="mu">in ${td.length} session${td.length==1?'':'s'}</span><div class="mu">${f.length} sessions · ${sum(f)} min all time</div></div>`:'<div class="card mu">No focus sessions yet. Start one from Today.</div>'})()}<h2>Habits</h2>${S.habits.length?S.habits.map(h=>{const s=hStats(h);return`<div class="card"><b>${esc(h.name)}</b><div class="bar"><i style="width:${s.mo}%"></i></div><div class="mu">Month ${s.mo}% · Streak ${s.cur} · Best ${s.best}</div></div>`}).join(''):'<div class="card mu">No habit history yet.</div>'}
+ <div class="mu">Completion % = done ÷ (planned − skipped). Unscheduled tasks add no planned time.</div>`}
+function vSet(){const s=S.set;return`<h1>Settings</h1>
+ <div class="card"><label>Theme</label><select onchange="S.set.theme=this.value;save();render()">${['auto','dark','light'].map(x=>`<option ${s.theme===x?'selected':''}>${x}</option>`).join('')}</select>
+ <label>Time format</label><select onchange="S.set.h24=this.value==='24';save()">${[24,12].map(x=>`<option value="${x}" ${s.h24===(x===24)?'selected':''}>${x}-hour</option>`).join('')}</select>
+ <label>Week starts on</label><select onchange="S.set.ws=+this.value;save()"><option value="1" ${s.ws==1?'selected':''}>Monday</option><option value="0" ${s.ws==0?'selected':''}>Sunday</option></select>
+ <label>Default reminder (minutes before, -1 for none)</label><input type="number" value="${s.rem}" onchange="S.set.rem=+this.value;save()"><label>Focus length (minutes)</label><input type="number" min="1" value="${s.fm||25}" onchange="S.set.fm=Math.max(1,+this.value||25);save()"><label>Break length (minutes)</label><input type="number" min="1" value="${s.bm||5}" onchange="S.set.bm=Math.max(1,+this.value||5);save()"></div>
+ <div class="card"><b>Reminders</b><div class="mu" style="margin:6px 0 10px">Reminders work while this page is open. Browsers can't promise alerts when it's closed. Notification permission: ${'Notification'in window?Notification.permission:'unsupported'}.</div><button onclick="Notification.requestPermission().then(render)">Allow notifications</button></div>
+ <div class="card"><b>Categories</b><div class="mu" style="margin:6px 0">${S.cats.map(esc).join(', ')}</div><div class="row"><input id="nc" placeholder="New category"><button onclick="const v=$('#nc').value.trim();if(v&&!S.cats.includes(v)){S.cats.push(v);save();render()}">Add</button></div></div>
+ <div class="card"><b>Your data</b><div class="mu" style="margin:6px 0 10px">Stored on this device only.</div><div class="row" style="flex-wrap:wrap"><button onclick="exp()">Export backup</button><button onclick="$('#imp').click()">Import backup</button><button class="d" onclick="rst()">Reset all data</button></div><input type="file" id="imp" accept=".json" style="display:none" onchange="imp(this.files[0])"></div>
+ <div class="mu">Zeyrio v1.0</div>`}
+function exp(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));a.download='zeyrio-backup-'+today()+'.json';a.click()}
+function imp(f){if(!f)return;const r=new FileReader();r.onload=()=>{try{const j=JSON.parse(r.result);if(!Array.isArray(j.tasks)||!Array.isArray(j.habits)||typeof j.done!=='object'||j.v!==1)throw 0;
+ ask('Replace current data with this backup ('+j.tasks.length+' tasks, '+j.habits.length+' habits)?',()=>{S=Object.assign({},DEF,j);save();render();toast('Backup restored')},'Restore')}catch(e){toast('That file is not a valid Zeyrio backup')}};r.readAsText(f)}
+function rst(){ask('Erase all tasks, habits and history? This cannot be undone.',()=>{S=structuredClone(DEF);save();render();toast('All data erased')},'Erase everything')}
+function tick(){const f=S.focus;if(f){if(Date.now()>=f.end){S.focus=null;if(f.mode==='focus'){(S.fh=S.fh||[]).push({d:today(),min:f.len});toast('Focus session done. Time for a break?')}else toast('Break over');save();try{if('Notification'in window&&Notification.permission==='granted')new Notification('Zeyrio',{body:f.mode==='focus'?'Focus session done':'Break over'})}catch(e){}if(tab==='today'&&!$('#sheet').innerHTML&&!$('#dlg').innerHTML)render()}else{const e=$('#fcl');if(e)e.textContent=fms(f.end-Date.now())}}
+ document.querySelectorAll('[data-tm]').forEach(e=>{const[i,d]=e.dataset.tm.split('|');e.textContent=fms(tracked(i,d))});
+ const d=today(),m=nowM();S.fired=S.fired||{};
+ for(const t of dayTasks(d)){if(t.rem<0||!t.start||S.done[key(t,d)])continue;const k=key(t,d)+'|'+t.rem,at=mins(t.start)-t.rem,sn=(S.snz||{})[key(t,d)];
+  if((sn?Date.now()>=sn:m>=at&&m<at+2)&&!S.fired[k]){S.fired[k]=1;if(sn)delete S.snz[key(t,d)];save();toast('⏰ '+t.title+' at '+fmt(t.start));
+   if('Notification'in window&&Notification.permission==='granted')try{new Notification('Zeyrio',{body:t.title+' at '+fmt(t.start)})}catch(e){}}}}
+setInterval(tick,1000);setInterval(()=>{if(tab==='today'&&!$('#sheet').innerHTML)render()},60000);
+render();
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script></body></html>
